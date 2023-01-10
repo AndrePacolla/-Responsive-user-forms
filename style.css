@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+    background-image: url(/img/background.png);
+    background-position: center;/*centralziar img*/
+    background-repeat: no-repeat;/*para img n repetir*/
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
+
+}
+
+.w50{
+   width: 50%;/*deixando 50% de espaço, sobra 50% espaço, ativando o float lef ,a classe fica lado a lado ,ocupando o restante*/
+   float: left;
+}
+
+.box{
+    display: flex;
+    width: 930px;
+    
+}
+
+.img-box{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 50%;
+    padding: 20px;
+    border-radius: 20px 0px 0px 20px;/*definindo os lados que teram aredondamento*/
+
+}
+
+.img-box img{
+    width: 100%;
+    margin-top: 100px;
+    
+}
+
+.form-box{
+    width: 50%;
+    border-radius: 0px 20px 20px 0px;
+    background-color: rgba(255, 255, 255, 0.40);
+    padding: 20px 20px;/*30px é cima e baixo , 20px lado direito e esquerdo*/
+
+}
+
+.form-box h2{
+    font-family: 'Dancing Script';
+    font-size: 35px;
+    color: aliceblue;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.form-box p{
+    font-weight: bold;
+    color: aliceblue;
+    font-size: 16px;
+}
+
+.form-box p a {
+    
+    color: #FF008A;
+    padding-left: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form-box form{
+    margin: 20px 0;
+}
+
+.input-group{
+    margin-bottom: 15px;
+}
+.input-group label{
+    font-weight: bold;
+    color: rgb(98, 98, 100);
+    display: block;
+}
+.input-group input{
+    width:100%;
+    height: 45px;
+    background-color:rgba(255, 255, 255, 0.40) ;
+    padding: 15px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    outline: none;
+    transition: all 0.4s ease;
+    
+}
+
+.input-group input:focus{
+    border-color: #ff008869;
+}
+
+.input-group button{
+    width: 100%;
+    height: 47px;
+    background-color: #FF008A;
+    border-radius: 20px;
+    outline: none;
+    color: aliceblue;
+    cursor: pointer;
+    border-color: transparent;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+
+@media (max-width:930px){
+     .img-box{
+        display: none;
+     }
+     .box{
+        width: 700px;
+    }
+    .form-box{
+        width: 100%;
+        border-radius: 30px;
+    }
+}
+@media (max-width:500px){
+    .w50{
+        width: 100%;
+        padding: 0;
+    }
+
+}
+
